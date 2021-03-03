@@ -9,8 +9,15 @@
 	grid-row: #{$row-start}/#{$row-end};
 }
 
-//! media query mixin
+//! flexbox helper
+@mixin flex($direction, $justify, $align) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
 
+//! media query mixin
 // mobile first
 $breakpoints-up: (
 	"phablet": "400px",

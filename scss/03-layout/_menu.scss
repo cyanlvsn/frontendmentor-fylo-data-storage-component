@@ -1,0 +1,19 @@
+.menu {
+	@include flex(column, space-between, flex-start);
+	&__items {
+		@include flex(row, flex-start, center);
+	}
+	border-top-right-radius: 9rem;
+}
+
+.items-styles {
+	// padding: 1.2rem;
+	background-color: $Very-Dark-Blue;
+	border-radius: 0.7rem;
+	height: 5rem;
+	width: 5rem;
+	&:not(:last-child) {
+		margin-right: 1.5rem;
+	}
+	@include flex(row, center, center);
+}

@@ -1,0 +1,64 @@
+body {
+	background-image: url(/images/bg-desktop.png);
+	background-color: $Very-Dark-Blue;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+
+	@include respond-down(desktop) {
+		background-image: url(/images/bg-mobile.png);
+		background-size: cover;
+	}
+	@include flex(row, center, center);
+}
+
+main {
+	width: 100%;
+	padding: 0 10%;
+
+	@include respond-down(phablet) {
+		padding: 0 2rem;
+	}
+	@include respond-down(tablet) {
+		@include flex(column, center, center);
+	}
+	@include respond-down(desktophd) {
+		padding: 0 5%;
+	}
+
+	@include flex(row, center, flex-end);
+}
+
+.menu {
+	height: 20rem;
+	width: 35rem;
+	margin-right: 3rem;
+	@include respond-down(desktop) {
+		min-width: max-content;
+		margin-right: 2rem;
+	}
+	@include respond-down(phablet) {
+		width: 100%;
+		margin-right: unset;
+		margin-bottom: 1.6rem;
+	}
+}
+.info {
+	width: 55rem;
+	height: 15rem;
+	@include respond-down(desktop) {
+		min-width: max-content;
+	}
+	@include respond-down(phablet) {
+		width: 100%;
+	}
+}
+
+//* shared styles
+.menu,
+.info {
+	background-color: $Dark-Blue;
+	box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+	padding: 4rem;
+	border-radius: 1rem;
+}
