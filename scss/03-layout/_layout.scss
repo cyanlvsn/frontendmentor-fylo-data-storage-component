@@ -16,7 +16,7 @@ main {
 	width: 100%;
 	padding: 0 10%;
 
-	@include respond-down(phablet) {
+	@include respond-down(tablet) {
 		padding: 0 2rem;
 	}
 	@include respond-down(tablet) {
@@ -37,7 +37,7 @@ main {
 		min-width: max-content;
 		margin-right: 2rem;
 	}
-	@include respond-down(phablet) {
+	@include respond-down(tablet) {
 		width: 100%;
 		margin-right: unset;
 		margin-bottom: 1.6rem;
@@ -49,7 +49,7 @@ main {
 	@include respond-down(desktop) {
 		min-width: max-content;
 	}
-	@include respond-down(phablet) {
+	@include respond-down(tablet) {
 		width: 100%;
 	}
 }
