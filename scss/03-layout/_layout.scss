@@ -1,12 +1,12 @@
 body {
-	background-image: url(/images/bg-desktop.png);
+	background-image: url(../images/bg-desktop.png);
 	background-color: $Very-Dark-Blue;
 	background-repeat: no-repeat;
 	background-size: contain;
 	background-position: bottom;
 
 	@include respond-down(desktop) {
-		background-image: url(/images/bg-mobile.png);
+		background-image: url(../images/bg-mobile.png);
 		background-size: cover;
 	}
 	@include flex(row, center, center);
